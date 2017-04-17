@@ -1,0 +1,1 @@
+a:5:{s:5:"title";s:9:"啊切CMS";s:8:"keywords";s:20:"啊切 cms thinkphp ";s:11:"description";s:6:"描述";s:9:"dumpmysql";s:1:"1";s:10:"cacheindex";s:1:"1";}

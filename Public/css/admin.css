@@ -1,0 +1,132 @@
+body{
+	font-family: 'Microsoft YaHei',sans-serif;
+	/*background-color: #415852;*/
+	/*background-color: #272b30;*/
+	/*background-color: #fff;*/
+	background-color: #1c1e22;
+}
+
+/*后台首页*/
+.count .table{
+	color:#130202;
+}
+.post a{
+	color:#130202;
+	text-decoration: none;
+}
+.post a:hover{
+	color:#14B00A;
+}
+.homepage .col-md-6 .panel .progress {
+    margin-bottom: 15px;
+}
+
+
+.wh64{
+	width:64px;
+	height:64px;
+}
+
+button.btn.btn-success.subbtn {
+    margin-top: 15px;
+}
+/*userlist.html*/
+.page-header{
+	margin-top:0;
+}
+.page-header h4{
+	margin:0;
+	font-weight: bold;
+	color: #fff;
+}
+ul.pagination {
+    margin-top: 0;
+}
+.row table.table {
+    /*padding: 10px;*/
+    /*border: 1px solid #eee;     配合黑色主题*/
+    border-top: none;
+}
+
+/*user_search.html*/
+form {
+    /*border: 1px solid #eee;     配合黑色主题*/
+    padding: 10px;
+    border-top: none;
+}
+table{
+	color:#E4DDDD;
+}
+
+/*tag.html*/
+.tag form{
+	padding: 0;
+    margin-top: 22px;
+    border: none;
+}
+.tag .page-header{
+	margin-bottom: 0;
+}
+.addbtn{
+	margin-bottom: 10px;
+}
+.taglist{
+	margin:20px  auto;
+}
+.taglist .alert{
+	margin:0 20px 20px 0;
+}
+/*footer开始*/
+footer{
+	text-align: center;
+	font-weight: 800;
+	padding: 20px;
+}
+
+/*路径导航*/
+.page-header {
+	margin: 0;
+}
+ol.breadcrumb {
+	margin: 0;
+}
+form.formType {
+	padding: 0;
+}
+form#singcms-listorder{
+	padding:10px 0 0 0 ;
+}
+
+/*重写tp分页*/
+ul.pagination>div>a.num,#aqie>div>span,#aqie>div>a.next,#aqie>div>a.prev{
+	display: inline-block;
+	position: relative;
+	float: left;
+	padding: 8px 12px;
+	line-height: 1.42857143;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #3a3f44;
+	border: 1px solid rgba(0,0,0,0.6);
+	margin-left: -1px;
+}
+ul.pagination>div>span.current{
+	background-image: -webkit-linear-gradient(#020202, #101112 40%, #141618);
+	background-image: -o-linear-gradient(#020202, #101112 40%, #141618);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#020202), color-stop(40%, #101112), to(#141618));
+	background-image: linear-gradient(#020202, #101112 40%, #141618);
+	background-repeat: no-repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff020202', endColorstr='#ff141618', GradientType=0);
+	-webkit-filter: none;
+	filter: none
+}
+
+/**
+文章标题超出字数省略号
+ */
+#aqieContent>tr td:nth-of-type(4){
+	width: 80px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
