@@ -1,0 +1,17 @@
+[ 2017-04-28T00:34:36+08:00 ] 127.0.0.1 /index.php?c=index&a=getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.030002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015001s ]
+NOTIC: [2] Declaration of Home\Controller\CommonController::error($message = '') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) F:\Thinkphp\Application\Home\Controller\CommonController.class.php 第 41 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) F:\Thinkphp\Application\Common\Model\BasicModel.class.php 第 10 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) F:\Thinkphp\Application\Common\Model\BasicModel.class.php 第 10 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\MenuModel.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.2780s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id  [ RunTime:0.2050s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\NewsModel.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0880s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('7','6')  [ RunTime:0.2060s ]
+

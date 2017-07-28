@@ -1,0 +1,50 @@
+[ 2017-04-20T22:41:30+08:00 ] 192.168.1.102 /index.php?c=index&a=getCount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.172010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.267015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.268015s ]
+NOTIC: [2] Declaration of Home\Controller\CommonController::error($message = '') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) F:\Thinkphp\Application\Home\Controller\CommonController.class.php 第 41 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) F:\Thinkphp\Application\Common\Model\BasicModel.class.php 第 10 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) F:\Thinkphp\Application\Common\Model\BasicModel.class.php 第 10 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\MenuModel.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:1.1251s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id  [ RunTime:0.0650s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\NewsModel.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.4630s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('7','6')  [ RunTime:0.0620s ]
+
+[ 2017-04-20T22:41:31+08:00 ] 192.168.1.102 /index.php?c=cat&id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.171010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.273015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.273015s ]
+NOTIC: [2] Declaration of Home\Controller\CommonController::error($message = '') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) F:\Thinkphp\Application\Home\Controller\CommonController.class.php 第 41 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) F:\Thinkphp\Application\Common\Model\BasicModel.class.php 第 10 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) F:\Thinkphp\Application\Common\Model\BasicModel.class.php 第 10 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\MenuModel.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:1.0531s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id  [ RunTime:0.2110s ]
+SQL: SELECT * FROM `cms_menu` WHERE ( menu_id=9 ) LIMIT 1   [ RunTime:0.4500s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\NewsModel.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` = 1 ORDER BY countnum desc,news_id desc  LIMIT 10   [ RunTime:0.0630s ]
+NOTIC: [8] Undefined index: p F:\Thinkphp\Application\Home\Controller\CatController.class.php 第 23 行.
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 AND `thumb` <> '' AND `catid` = 9 ORDER BY listorder desc,news_id desc LIMIT 0,2   [ RunTime:0.0390s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` <> -1 AND `thumb` <> '' AND `catid` = 9 LIMIT 1   [ RunTime:0.1280s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.040003s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.040003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.345019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.345019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.171010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.171010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021001s ]
+

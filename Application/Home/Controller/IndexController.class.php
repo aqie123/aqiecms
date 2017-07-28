@@ -14,13 +14,24 @@ class IndexController extends CommonController
         $topPicNews = D("PositionContent")->select(array('status'=>1,'position_id'=>3),2);
 
         // 征文比赛中图+三个小图
-        $solicit = D("PositionContent")->select(array('status'=>1,'position_id'=>4),3);
+        $solicit = D("PositionContent")->select(array('status'=>1,'position_id'=>4),4);
 
         // 获取推荐文章 @
         $recommend = M("News")->where('status=1 and thumb<>"" and recommend=1')
                               ->order('create_time desc,countnum desc')
                               ->limit(3)->select();
-         // dump(M('News')->getLastSql());die;
+          //dump(M('News')->getLastSql());die;
+
+        // $rankNews = D("News")->select(array('status'=>1,'thumb'=>array('neq','')),3);
+        // dump(D('News')->getLastSql());die;
+
+        /*$rankNews =  M("News")->where('status=1')
+                              ->order('countnum desc')
+                              ->limit(3)->select(false);
+                              var_dump($rankNews);die; 
+                              */ 
+                                          
+
         $copyFrom = C("COPY_FROM");
         //var_dump($copyFrom[0]);die;
 
@@ -37,7 +48,6 @@ class IndexController extends CommonController
 
         $this->assign('result',array(
             'topPicNews' => $topPicNews,
-            'midPicNews' =>$midPicNews,
             'recommend'=>$recommend,
             'rankNews' =>$rankNews,
             'catId' => 0,

@@ -21,13 +21,14 @@ return array(
     /**
      * tp路由层面伪静态
      */
+    //'URL_MODEL'=>2,         // 隐藏入口文件
     // 开启路由
-    'URL_ROUTER_ON'   => true,
+    //'URL_ROUTER_ON'   => true,
     // 定义规则
-    'URL_ROUTE_RULES'=>array(
+    //'URL_ROUTE_RULES'=>array(
         // 'news/:year/:month/:day' => array('News/archive', 'status=1'),
         // 'news/:id'               => 'News/read',
        //  'news/read/:id'          => '/news/:1',
         //'login/:year/:month' => array('admin/index','status=1'),
-    ),
+    //),
 );

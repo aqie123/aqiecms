@@ -163,7 +163,7 @@
                             </dt>
                             <dd class="pb-mt10">
                                 <strong>文章来源</strong> ：
-                                <a href="/user-10348"><?php echo ($listnews["copyfrom"]); ?></a>
+                                <a href="/user-10348"><?php echo ($result['copyfrom'][$listnews['copyfrom']]); ?></a>
                             </dd>
                             <dd>
                                 <strong>关键字</strong> ： <?php echo ($listnews["keywords"]); ?>

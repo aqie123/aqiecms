@@ -17,6 +17,8 @@ class CatController extends CommonController {
 
         // 文章排行
         $rankNews = $this->getRank();
+        // 文章来源
+        $copyFrom = C("COPY_FROM");
 
         $page = $_REQUEST['p'] ? $_REQUEST['p'] : 1;
         $pageSize = 2;
@@ -39,6 +41,7 @@ class CatController extends CommonController {
             'catId' => $id,
             'listNews' => $news,
             'pageres' => $pageres,
+            'copyfrom'=>$copyFrom,
         ));
         $this->display();
     }

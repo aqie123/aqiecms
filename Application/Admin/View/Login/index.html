@@ -42,8 +42,8 @@
                             <i class="material-icons">&#xE5C4;</i>
                         </a>
                         <h2>LOGIN</h2>
-                        <input type="text" placeholder="用户名" name="username"/>
-                        <input type="password" placeholder="Password" name="password"/>
+                        <input type="text" placeholder="admin" name="username"/>
+                        <input type="password" placeholder="123" name="password"/>
                         <button class="btn_login" onClick="login.check()" type="button">LOGIN</button>
                     </div>
                 </form>

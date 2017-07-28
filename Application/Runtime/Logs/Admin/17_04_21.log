@@ -1,0 +1,534 @@
+[ 2017-04-21T00:07:33+08:00 ] 127.0.0.1 /admin.php?c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.058004s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.059004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.243014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.243014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010001s ]
+
+[ 2017-04-21T00:07:45+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.9841s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.1410s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1492704465' WHERE ( admin_id=2 ) [ RunTime:0.0820s ]
+
+[ 2017-04-21T00:07:45+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1492704465' WHERE ( admin_id=2 ) [ RunTime:0.0010s ]
+
+[ 2017-04-21T00:07:47+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\NewsModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0800s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` = 1 ORDER BY countnum desc LIMIT 1   [ RunTime:0.0610s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0420s ]
+NOTIC: [2] Declaration of Common\Model\PositionModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionModel.class.php 第 111 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.1830s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_position` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_admin` WHERE `status` = 1 AND `lastlogintime` > 1492704000 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Illegal string offset 'tp_count' F:\Thinkphp\Application\Common\Model\AdminModel.class.php 第 106 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-21T00:07:49+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) F:\Thinkphp\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [2] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') F:\Thinkphp\Application\Admin\Controller\MenuController.class.php 第 11 行.
+NOTIC: [8] Undefined index: p F:\Thinkphp\Application\Admin\Controller\MenuController.class.php 第 27 行.
+NOTIC: [8] Undefined index: pageSize F:\Thinkphp\Application\Admin\Controller\MenuController.class.php 第 28 行.
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\MenuModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY listorder desc,menu_id LIMIT 0,10   [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id  [ RunTime:0.0160s ]
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.164010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.164010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-21T00:08:04+08:00 ] 127.0.0.1 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) F:\Thinkphp\Application\Admin\Controller\ContentController.class.php 第 10 行.
+NOTIC: [2] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') F:\Thinkphp\Application\Admin\Controller\ContentController.class.php 第 10 行.
+NOTIC: [8] Undefined index: title F:\Thinkphp\Application\Admin\Controller\ContentController.class.php 第 17 行.
+NOTIC: [8] Undefined index: catid F:\Thinkphp\Application\Admin\Controller\ContentController.class.php 第 23 行.
+NOTIC: [8] Undefined index: p F:\Thinkphp\Application\Admin\Controller\ContentController.class.php 第 29 行.
+NOTIC: [2] Declaration of Common\Model\NewsModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\NewsModel.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc,news_id desc LIMIT 0,5   [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Declaration of Common\Model\PositionModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionModel.class.php 第 111 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.0000s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\MenuModel.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined variable: menuId F:\Thinkphp\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+NOTIC: [8] Undefined variable: menuId F:\Thinkphp\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+NOTIC: [8] Undefined variable: menuId F:\Thinkphp\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+NOTIC: [8] Undefined variable: menuId F:\Thinkphp\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+NOTIC: [8] Undefined variable: menuId F:\Thinkphp\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+NOTIC: [8] Undefined variable: menuId F:\Thinkphp\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+NOTIC: [8] Undefined variable: menuId F:\Thinkphp\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-21T00:08:11+08:00 ] 127.0.0.1 /admin.php?c=position
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Admin\Controller\PositionController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) F:\Thinkphp\Application\Admin\Controller\PositionController.class.php 第 8 行.
+NOTIC: [2] Declaration of Common\Model\PositionModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` <> -1 ORDER BY id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\MenuModel.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: index F:\Thinkphp\Application\Runtime\Cache\Admin\3a437f75b5b60a521a3ad0fc93a5ab5f.php 第 93 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined variable: type F:\Thinkphp\Application\Runtime\Cache\Admin\3a437f75b5b60a521a3ad0fc93a5ab5f.php 第 113 行.
+NOTIC: [8] Undefined variable: type F:\Thinkphp\Application\Runtime\Cache\Admin\3a437f75b5b60a521a3ad0fc93a5ab5f.php 第 114 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-21T00:08:16+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 12 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 12 行.
+NOTIC: [2] Declaration of Common\Model\PositionModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: title F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 20 行.
+NOTIC: [8] Undefined index: position_id F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 26 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionContentModel.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0650s ]
+NOTIC: [8] Undefined index: title F:\Thinkphp\Application\Common\Model\PositionContentModel.class.php 第 42 行.
+SQL: SELECT * FROM `cms_position_content` WHERE `status` <> -1 AND `position_id` = 1 ORDER BY listorder desc,id desc  [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\MenuModel.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: index F:\Thinkphp\Application\Runtime\Cache\Admin\b8a8b9d170e6c07d7b463ea02385894d.php 第 99 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined variable: title F:\Thinkphp\Application\Runtime\Cache\Admin\b8a8b9d170e6c07d7b463ea02385894d.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-21T00:08:23+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=edit&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 12 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 12 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_position_content` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Declaration of Common\Model\PositionModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionModel.class.php 第 111 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\MenuModel.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: index F:\Thinkphp\Application\Runtime\Cache\Admin\7125ea1ecb2643e5c73f6fda1ddafd42.php 第 100 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-21T00:08:41+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 12 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 12 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0060s ]
+SQL: UPDATE `cms_position_content` SET `title`='优秀博客php',`position_id`='1',`thumb`='/upload/2017/04/16/58f32ac30a32e.jpg',`url`='http://blog.csdn.net/lifushan123/article/details/45464205',`news_id`='0',`status`='1' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2017-04-21T00:08:42+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 12 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 12 行.
+NOTIC: [2] Declaration of Common\Model\PositionModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: title F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 20 行.
+NOTIC: [8] Undefined index: position_id F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 26 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionContentModel.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: title F:\Thinkphp\Application\Common\Model\PositionContentModel.class.php 第 42 行.
+SQL: SELECT * FROM `cms_position_content` WHERE `status` <> -1 AND `position_id` = 1 ORDER BY listorder desc,id desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\MenuModel.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: index F:\Thinkphp\Application\Runtime\Cache\Admin\b8a8b9d170e6c07d7b463ea02385894d.php 第 99 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined variable: title F:\Thinkphp\Application\Runtime\Cache\Admin\b8a8b9d170e6c07d7b463ea02385894d.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-21T00:08:47+08:00 ] 127.0.0.1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) F:\Thinkphp\Application\Common\Model\BasicModel.class.php 第 10 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) F:\Thinkphp\Application\Common\Model\BasicModel.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\MenuModel.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: index F:\Thinkphp\Application\Runtime\Cache\Admin\bb97361d9e4731aec48331de29e1c4d1.php 第 94 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-21T00:08:50+08:00 ] 127.0.0.1 /admin.php?c=basic&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Common\Model\BasicModel::save($data = Array) should be compatible with Think\Model::save($data = '', $options = Array) F:\Thinkphp\Application\Common\Model\BasicModel.class.php 第 10 行.
+NOTIC: [2] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) F:\Thinkphp\Application\Common\Model\BasicModel.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\MenuModel.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: index F:\Thinkphp\Application\Runtime\Cache\Admin\bb97361d9e4731aec48331de29e1c4d1.php 第 94 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-21T00:09:44+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=edit&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 12 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 12 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_position_content` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Declaration of Common\Model\PositionModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionModel.class.php 第 111 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\MenuModel.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: index F:\Thinkphp\Application\Runtime\Cache\Admin\7125ea1ecb2643e5c73f6fda1ddafd42.php 第 100 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-21T00:09:49+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 12 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 12 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0100s ]
+SQL: UPDATE `cms_position_content` SET `title`='优秀博客php',`position_id`='1',`thumb`='/upload/2017/04/16/58f32ac30a32e.jpg',`url`='http://blog.csdn.net/lifushan123',`news_id`='0',`status`='1' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2017-04-21T00:09:50+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 12 行.
+NOTIC: [2] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 12 行.
+NOTIC: [2] Declaration of Common\Model\PositionModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cms_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: title F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 20 行.
+NOTIC: [8] Undefined index: position_id F:\Thinkphp\Application\Admin\Controller\PositioncontentController.class.php 第 26 行.
+NOTIC: [2] Declaration of Common\Model\PositionContentModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\PositionContentModel.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: title F:\Thinkphp\Application\Common\Model\PositionContentModel.class.php 第 42 行.
+SQL: SELECT * FROM `cms_position_content` WHERE `status` <> -1 AND `position_id` = 1 ORDER BY listorder desc,id desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Declaration of Common\Model\MenuModel::find($id) should be compatible with Think\Model::find($options = Array) F:\Thinkphp\Application\Common\Model\MenuModel.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: index F:\Thinkphp\Application\Runtime\Cache\Admin\b8a8b9d170e6c07d7b463ea02385894d.php 第 99 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined index: a F:\Thinkphp\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8] Undefined variable: title F:\Thinkphp\Application\Runtime\Cache\Admin\b8a8b9d170e6c07d7b463ea02385894d.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-21T23:06:36+08:00 ] 127.0.0.1 /admin.php?c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-21T23:21:35+08:00 ] 127.0.0.1 /admin.php?c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

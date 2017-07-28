@@ -1,1 +1,1 @@
-a:5:{s:5:"title";s:9:"啊切CMS";s:8:"keywords";s:20:"啊切 cms thinkphp ";s:11:"description";s:6:"描述";s:9:"dumpmysql";s:1:"1";s:10:"cacheindex";s:1:"1";}
+a:5:{s:5:"title";s:7:"aqiecms";s:8:"keywords";s:18:"aqie cms thinkphp ";s:11:"description";s:80:"使用thinkphp 3.2.3编写的cms，实现文章展示，推荐位管理等功能";s:9:"dumpmysql";s:1:"1";s:10:"cacheindex";s:1:"1";}
